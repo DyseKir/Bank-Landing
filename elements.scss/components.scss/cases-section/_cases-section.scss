@@ -1,0 +1,152 @@
+.cases-section {
+  &__logo-text,
+  &__text {
+    font-family: "Lexend", sans-serif;
+  }
+
+  &__text-wrapper {
+  }
+  &__logo-text {
+    color: var(--background-color-2);
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 150%;
+  }
+  &__text {
+    color: var(--text-color-4);
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 150%;
+  }
+}
+.individuals-block {
+  padding-top: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 60px;
+  align-self: stretch;
+  &__advantages {
+    width: 748px;
+    height: 534px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+    border-radius: 20px;
+    background: var(--text-color-2);
+    gap: 20px;
+  }
+
+  &__article-top {
+    width: 314px;
+    height: 222px;
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    border-radius: 16px;
+    border: 1px solid var(--border-color);
+    background: var(--text-color-2);
+  }
+  &__article-bottom {
+    width: 314px;
+    height: 192px;
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    border-radius: 16px;
+    border: 1px solid var(--border-color);
+    background: var(--text-color-2);
+  }
+  &__article-text {
+    color: var(--text-color);
+    text-align: center;
+    font-family: "Lexend", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 150%;
+  }
+}
+.use-case-text-block {
+  padding: 30px 0px;
+  width: 756px;
+  gap: 62px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  flex-wrap: wrap;
+  &__article-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 100px;
+    align-self: stretch;
+  }
+
+  &__wrapper {
+    gap: 14px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__text-logo {
+    color: var(--text-color);
+    font-family: "Lexend", sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 150%;
+  }
+  &__article {
+    width: 182px;
+    height: 146px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    position: relative; /* Позиционирование для псевдоэлемента */
+  }
+  &__article:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: -50px;
+    top: 0;
+    bottom: 0;
+    border-right: 1px dashed var(--border-color); /* Прерывистая линия */
+  }
+  &__text {
+    color: var(--text-color-4);
+    font-family: "Lexend", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 150%; /* 27px */
+  }
+
+  &__btn {
+    color: var(--text-color);
+    text-align: center;
+    font-family: "Lexend", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+    padding: 18px 24px;
+    border-radius: 82px;
+    border: 1px solid var(--border-color);
+    background: var(--text-color-2);
+    cursor: pointer;
+  }
+  &__procent-text {
+    color: var(--background-color-2);
+    font-family: "Lexend", sans-serif;
+    font-size: 58px;
+    font-weight: 500;
+    line-height: 150%; /* 87px */
+  }
+  &__text {
+    color: var(--text-color-4);
+    font-family: "Lexend", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 150%; /* 27px */
+  }
+}
