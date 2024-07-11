@@ -1,0 +1,49 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+pre,
+form,
+fieldset,
+legend,
+table,
+th,
+td,
+div,
+span,
+header,
+footer,
+main,
+nav,
+section,
+article,
+aside,
+figure,
+figcaption,
+input,
+textarea,
+button,
+a {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
