@@ -1,0 +1,106 @@
+.future-section {
+  padding: 150px 0px;
+  &__logo-text {
+    color: var(--text-color);
+    font-family: "Lexend", sans-serif;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 150%; /* 72px */
+  }
+  &__span-text {
+    color: var(--background-color-2);
+    font-family: "Lexend", sans-serif;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 150%;
+  }
+  &__text {
+    color: var(--text-color-4);
+    font-family: "Lexend", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 150%; /* 27px */
+  }
+
+  &__buttons-block {
+    display: flex;
+    padding: 48px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    width: 310px;
+    height: 338px;
+    border-radius: 12px;
+    background: var(--text-color-2);
+  }
+  &__button {
+    cursor: pointer;
+    color: var(--text-color);
+    font-family: "Lexend", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%; /* 27px */
+    border-radius: 100px;
+    border: 1px solid var(--border-color);
+    background: var(--text-color-2);
+    align-self: stretch;
+    display: flex;
+    padding: 18px 24px;
+    align-items: center;
+    gap: 10px;
+    &:hover {
+      color: var(--background-color-2);
+      background-color: var(--background-color);
+    }
+  }
+  &__wrapper {
+    padding-top: 80px;
+    display: flex;
+    gap: 28px;
+  }
+  &__wrapper-blocks {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    width: 1258px;
+    height: 574px;
+    flex-wrap: wrap;
+  }
+  &__wrapper-text-block {
+    display: flex;
+    gap: 10px;
+  }
+  &__wrapper-block {
+    width: 614px;
+    height: 272px;
+    display: flex;
+    padding: 50px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    align-self: stretch;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    background: var(--text-color-2);
+  }
+  &__logo-text-2 {
+    width: 470px;
+    height: 34px;
+    color: var(--text-color);
+    font-family: "Lexend", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 150%; /* 33px */
+  }
+  &__logo-arrow {
+    cursor: pointer;
+  }
+  &__text {
+    color: var(--text-color-4);
+    font-family: "Lexend", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 150%; /* 27px */
+    letter-spacing: -0.108px;
+  }
+}

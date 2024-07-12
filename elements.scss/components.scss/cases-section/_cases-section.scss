@@ -24,7 +24,7 @@
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  gap: 60px;
+  gap: 90px;
   align-self: stretch;
   &__advantages {
     width: 748px;
@@ -149,4 +149,12 @@
     font-weight: 300;
     line-height: 150%; /* 27px */
   }
+}
+.business-block {
+  padding-top: 80px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  gap: 90px;
+  align-self: stretch;
 }

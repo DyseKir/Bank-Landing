@@ -59,11 +59,10 @@
     border: none;
   }
   &__lcc-container {
-    display: flex;
+    display: inline-flex;
     padding: 10px 20px 10px 12px;
     align-items: center;
     gap: 6px;
-    width: 358px;
     height: 44px;
     border-radius: 60px;
     background: var(--border-color);
@@ -164,6 +163,7 @@
     align-self: stretch;
   }
   &__monthly-income {
+    cursor: pointer;
     left: -60.692px;
     top: -43.352px;
     position: absolute;

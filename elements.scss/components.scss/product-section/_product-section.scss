@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 100px;
-  margin: 150px 0px;
+  padding: 150px 0px;
   &__logo-text,
   &__logo-span,
   &__text {
@@ -16,7 +16,7 @@
   &__wrapper-block {
     display: flex;
     align-items: flex-end;
-    gap: 376px;
+    gap: 340px;
     align-self: stretch;
   }
   &__wrapper-text {
@@ -81,7 +81,6 @@
     gap: 30px;
     font-family: "Lexend", sans-serif;
     width: 466px;
-    height: 292px;
     position: relative;
     padding: 20px;
     box-sizing: border-box;

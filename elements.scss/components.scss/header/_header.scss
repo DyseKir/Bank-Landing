@@ -6,36 +6,35 @@
   align-items: center;
   border-radius: 100px;
   border: 1px solid var(--border-color);
-}
+  &__logo-link {
+    text-decoration: none;
+    display: flex;
+  }
 
-.header__logo-link {
-  text-decoration: none;
-  display: flex;
-}
+  &__list {
+    display: flex;
+    list-style-type: none;
+  }
 
-.header__list {
-  display: flex;
-  list-style-type: none;
-}
+  &__link {
+    text-decoration: none;
+    color: var(--text-color);
+    font-family: "Lexend", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+    padding: 12px 24px;
+    transition: all 0.5s ease;
+  }
 
-.header__link {
-  text-decoration: none;
-  color: var(--text-color);
-  font-family: "Lexend", sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 150%;
-  padding: 12px 24px;
-  transition: all 0.5s ease;
-}
+  &__link:hover {
+    border-radius: 82px;
+    background-color: var(--border-color);
+    transform: translateX(20px);
+  }
 
-.header__link:hover {
-  border-radius: 82px;
-  background-color: var(--border-color);
-  transform: translateX(20px);
-}
-
-.header__form-container {
-  display: flex;
-  padding-right: 34px;
+  &__form-container {
+    display: flex;
+    padding-right: 34px;
+  }
 }
