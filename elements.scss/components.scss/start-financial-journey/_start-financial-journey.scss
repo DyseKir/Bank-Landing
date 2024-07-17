@@ -1,0 +1,51 @@
+.start-financial-journey {
+  padding: 75px 0px;
+}
+.start-financial-journey-wrapper {
+  display: flex;
+  width: 1596px;
+  padding: 80px;
+  align-items: center;
+  gap: 150px;
+  border-radius: 20px;
+  border: 1px solid var(--border-color);
+  &__text-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
+  &__title {
+    color: var(--text-color);
+    font-family: "Lexend", sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 150%;
+  }
+  &__span {
+    color: var(--background-color-2);
+    font-family: "Lexend", sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 150%;
+  }
+  &__text {
+    color: var(--text-color-4);
+    font-family: "Lexend", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 150%; /* 27px */
+  }
+  &__open-btn {
+    padding: 18px 30px;
+    align-items: center;
+    color: var(--text-color-2);
+    font-family: "Lexend", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%; /* 27px */
+    border-radius: 82px;
+    background: var(--background-color-2);
+    border: none;
+  }
+}

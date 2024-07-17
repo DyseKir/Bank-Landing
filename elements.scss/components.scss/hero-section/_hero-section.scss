@@ -1,252 +1,276 @@
 .hero-section {
-  padding: 100px 0px 100px 0px;
-  display: flex;
-  gap: 120px;
-  &__title,
-  &__title-span,
-  &__text,
-  &__open-btn,
-  &__wrapper-1,
-  &__wrapper-2,
-  &__wrapper-text,
-  &__wrapper-container-text,
-  &__span-text-1,
-  &__span-text-2,
-  &__exchange-btn,
-  &__container-span-value,
-  &__container-span,
-  &__container-text,
-  &__monthly-income-span,
-  &__monthly-income-text,
-  &__title {
-    font-family: "Lexend", sans-serif;
-  }
-  &__title,
-  &__title-span {
-    font-size: 48px;
-    font-weight: 500;
-  }
-  &__title {
-    color: var(--text-color);
-    line-height: 72px;
-  }
+	position: relative;
+	padding: 100px 0;
+	display: flex;
+	gap: 120px;
 
-  &__title-span {
-    color: var(--background-color-2);
-    line-height: 27px;
-  }
-  &__text {
-    width: 826px;
-  }
-  &__text,
-  &__wrapper-text {
-    color: var(--text-color);
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 27px;
-  }
+	&__dot-group {
+		position: absolute;
+		width: 758px;
+		height: 610px;
+		left: -152px;
+		top: -198px;
+	}
 
-  &__open-btn {
-    margin-top: 50px;
-    cursor: pointer;
-    padding: 18px 30px;
-    border-radius: 82px;
-    background: var(--background-color-2);
-    color: var(--text-color-2);
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 27px;
-    border: none;
-  }
-  &__lcc-container {
-    display: inline-flex;
-    padding: 10px 20px 10px 12px;
-    align-items: center;
-    gap: 6px;
-    height: 44px;
-    border-radius: 60px;
-    background: var(--border-color);
-  }
-  &__open-acc-container-llc-text {
-    color: var(--text-color-3);
-    font-family: "Lexend", sans-serif;
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 24px;
-  }
+	&__title,
+	&__title-span {
+		font-family: 'Lexend', sans-serif;
+		font-size: 48px;
+		font-weight: 500;
+	}
+
+	&__title {
+		color: var(--text-color);
+		line-height: 72px;
+	}
+
+	&__title-span {
+		color: var(--background-color-2);
+		line-height: 27px;
+	}
+
+	&__text {
+		width: 826px;
+		color: var(--text-color-3);
+		font-family: 'Lexend', sans-serif;
+		font-size: 18px;
+		font-weight: 300;
+		line-height: 150%; /* 27px */
+	}
+
+	&__open-btn {
+		margin-top: 50px;
+		cursor: pointer;
+		padding: 18px 30px;
+		border-radius: 82px;
+		background: var(--background-color-2);
+		color: var(--text-color-2);
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 27px;
+		border: none;
+	}
+
+	&__lcc-container {
+		display: inline-flex;
+		padding: 10px 20px 10px 12px;
+		align-items: center;
+		gap: 6px;
+		height: 44px;
+		border-radius: 60px;
+		background: var(--border-color);
+	}
+
+	&__open-acc-container-llc-text {
+		color: var(--text-color-3);
+		font-family: 'Lexend', sans-serif;
+		font-size: 18px;
+		font-weight: 300;
+		line-height: 24px;
+	}
 }
 
 .transactions {
-  position: relative;
-  border-radius: 10px;
-  border: 1px solid var(--border-color);
-  display: flex;
-  width: 516px;
-  padding: 34px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 26px;
-  flex-shrink: 0;
+	position: relative;
+	border-radius: 10px;
+	border: 1px solid var(--border-color);
+	display: flex;
+	width: 516px;
+	padding: 34px;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 26px;
+	background-color: var(--text-color-2);
 
-  &__exchange-container-2 {
-    display: flex;
-    flex-wrap: wrap;
-  }
+	&__arrow-group {
+		position: absolute;
+		right: -52px;
+		top: 110px;
+	}
 
-  &__wrapper-1,
-  &__wrapper-2,
-  &__span-text-1,
-  &__span-text-2 {
-    background-color: var(--text-color-2);
-    padding: 18px;
-    width: 222px;
-    height: 100px;
-    border: 1px solid var(--border-color);
-  }
+	&__exchange-container-2 {
+		display: flex;
+		flex-wrap: wrap;
+	}
 
-  &__wrapper-1 {
-    border-radius: 10px 0px 0px 0px;
-  }
+	&__wrapper-1,
+	&__wrapper-2,
+	&__span-text-1,
+	&__span-text-2 {
+		background-color: var(--text-color-2);
+		padding: 18px;
+		width: 222px;
+		height: 100px;
+		border: 1px solid var(--border-color);
+	}
 
-  &__wrapper-2 {
-    border-radius: 0px 10px 0px 0px;
-  }
+	&__span-text-1,
+	&__span-text-2 {
+		color: var(--text-color);
+		font-size: 18px;
+		font-weight: 500;
+		line-height: 150%;
+		display: flex;
+		justify-content: start;
+		align-items: center;
+		gap: 8px;
+		font-family: 'Lexend', sans-serif;
+	}
 
-  &__wrapper-container {
-    gap: 8px;
-    display: flex;
-    align-items: center;
-  }
+	&__wrapper-1 {
+		border-radius: 10px 0 0 0;
+	}
 
-  &__wrapper-text {
-    padding-top: 8px;
-    color: var(--text-color-3);
-    font-size: 14px;
-    line-height: 20px;
-  }
+	&__wrapper-2 {
+		border-radius: 0 10px 0 0;
+	}
 
-  &__wrapper-container-text {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 150%;
-  }
+	&__wrapper-text {
+		color: var(--text-color-3);
+		font-size: 14px;
+		font-weight: 300;
+		line-height: 150%; /* 20.809px */
+		font-family: 'Lexend', sans-serif;
+		padding-top: 8px;
+	}
 
-  &__span-text-1,
-  &__span-text-2 {
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 26px;
-    padding: 26px 18px;
-    height: 80px;
-    background: var(--text-color-2);
-    width: 222px;
-    border: 1px solid var(--border-color);
-  }
+	&__wrapper-container {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+	}
 
-  &__span-text-1 {
-    border-radius: 0px 0px 0px 10px;
-  }
+	&__wrapper-container-text {
+		font-family: 'Lexend', sans-serif;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 150%;
+	}
 
-  &__span-text-2 {
-    border-radius: 0px 0px 10px 0px;
-  }
-  &__exchange-btn {
-    cursor: pointer;
-    color: var(--background-color-2);
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 150%;
-    border: none;
-    border-radius: 72px;
-    background-color: var(--background-color-3);
-    padding: 14px 26px;
-    align-self: stretch;
-  }
-  &__monthly-income {
-    cursor: pointer;
-    left: -60.692px;
-    top: -43.352px;
-    position: absolute;
-    width: 188px;
-    height: 76px;
-    gap: 8px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    border-radius: 10px;
-    background: #22251b;
-  }
-  &__monthly-income-span {
-    color: var(--text-color);
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 150%;
-  }
-  &__monthly-income-text {
-    color: var(--text-color-3);
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 150%;
-  }
-  &__title {
-    color: var(--text-color);
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 150%;
-  }
-  &__container-text {
-    color: var(--text-color);
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 150%;
-  }
-  &__container-span {
-    color: var(--text-color);
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 150%;
-  }
-  &__container-span-value {
-    color: var(--text-color);
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 150%;
-    padding-left: 174px;
-  }
-  &__container-wrapper-block {
-    padding: 14px 20px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    border-radius: 10px;
-    border: 1px solid var(--border-color);
-    align-self: stretch;
-  }
+	&__span-text-1 {
+		border-radius: 0 0 0 10px;
+	}
+
+	&__span-text-2 {
+		border-radius: 0 0 10px 0;
+	}
+
+	&__exchange-btn {
+		cursor: pointer;
+		color: var(--background-color-2);
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 150%;
+		border: none;
+		font-family: 'Lexend', sans-serif;
+		border-radius: 72px;
+		background-color: var(--background-color-3);
+		padding: 14px 26px;
+		align-self: stretch;
+	}
+
+	&__monthly-income {
+		cursor: pointer;
+		position: absolute;
+		left: -61px;
+		top: -43px;
+		width: 188px;
+		height: 76px;
+		gap: 8px;
+		justify-content: center;
+		align-items: center;
+		display: flex;
+		border-radius: 10px;
+		background: #22251b;
+	}
+
+	&__monthly-income-span {
+		font-family: 'Lexend', sans-serif;
+		color: var(--text-color);
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 150%;
+	}
+
+	&__monthly-income-text {
+		color: var(--text-color-3);
+		font-size: 14px;
+		font-weight: 300;
+		line-height: 150%;
+		font-family: 'Lexend', sans-serif;
+	}
+
+	&__title {
+		font-family: 'Lexend', sans-serif;
+		color: var(--text-color);
+		font-size: 18px;
+		font-weight: 500;
+		line-height: 150%;
+	}
+
+	&__container-text {
+		color: var(--text-color);
+		font-size: 16px;
+		font-weight: 300;
+		line-height: 150%;
+		font-family: 'Lexend', sans-serif;
+	}
+
+	&__container-span {
+		color: var(--text-color);
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 150%;
+		font-family: 'Lexend', sans-serif;
+	}
+
+	&__container-span-value {
+		color: var(--text-color);
+		font-size: 20px;
+		font-weight: 500;
+		line-height: 150%;
+		padding-left: 174px;
+		font-family: 'Lexend', sans-serif;
+	}
+
+	&__container-wrapper-block {
+		padding: 14px 20px;
+		display: flex;
+		align-items: center;
+		gap: 8px;
+		border-radius: 10px;
+		border: 1px solid var(--border-color);
+		align-self: stretch;
+	}
 }
+
 .supported-cur-block {
-  position: absolute;
-  right: -52px;
-  bottom: -82px;
-  display: flex;
-  width: 370px;
-  padding: 8px 8px 8px 20px;
-  align-items: center;
-  border-radius: 70px;
-  background: var(--background-color-3);
-  &__wrapper {
-    display: flex;
-    padding: 8px;
-    align-items: flex-start;
-    gap: 6px;
-    border-radius: 48px;
-    border: 1px solid var(--border-color);
-    background-color: var(--background-color);
-  }
-  &__text {
-    color: var(--Absolute-White, #fff);
-    font-family: "Lexend", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 150%;
-  }
+	position: absolute;
+	right: -52px;
+	bottom: -82px;
+	display: flex;
+	width: 370px;
+	padding: 8px 8px 8px 20px;
+	align-items: center;
+	justify-content: space-between;
+	border-radius: 70px;
+	background: var(--background-color-3);
+
+	&__wrapper {
+		display: flex;
+		padding: 8px;
+		align-items: flex-start;
+		gap: 6px;
+		border-radius: 48px;
+		border: 1px solid var(--border-color);
+		background-color: var(--background-color);
+	}
+
+	&__text {
+		color: #fff; /* var(--Absolute-White) заменено на конкретный цвет */
+		font-family: 'Lexend', sans-serif;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 150%;
+	}
 }

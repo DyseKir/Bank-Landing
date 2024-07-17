@@ -47,3 +47,20 @@ body {
   background-color: var(--background-color);
   color: var(--text-color);
 }
+
+ul,
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+}
+.error {
+  color: var(--error-1);
+  font-family: "Lexend", sans-serif;
+}
+.valid {
+  color: var(--valid-1);
+}
+.invalid {
+  color: var(--invalid);
+}

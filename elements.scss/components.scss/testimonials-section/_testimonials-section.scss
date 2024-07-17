@@ -1,0 +1,136 @@
+.testimonials-section {
+	padding: 75px 0;
+
+	&__title-block-wrapper {
+		display: flex;
+		align-items: flex-end;
+		gap: 298px;
+		align-self: stretch;
+	}
+
+	&__title-block {
+		width: 910px;
+		height: 140px;
+	}
+
+	&__title,
+	&__span {
+		font-family: 'Lexend', sans-serif;
+		font-size: 48px;
+		font-weight: 500;
+		line-height: 150%; /* 72px */
+	}
+
+	&__title {
+		color: var(--text-color);
+	}
+
+	&__span {
+		color: var(--background-color-2);
+	}
+
+	&__text {
+		color: var(--text-color-4);
+		font-family: 'Lexend', sans-serif;
+		font-size: 18px;
+		font-weight: 300;
+		line-height: 150%; /* 27px */
+	}
+
+	&__buttons {
+		width: 390px;
+		height: 84px;
+		display: flex;
+		padding: 14px;
+		border-radius: 82px;
+		border: 1px solid var(--border-color);
+		background: var(--text-color-2);
+	}
+
+	&__button-business,
+	&__button-indiv {
+		display: flex;
+		padding: 14px 24px;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+		font-family: 'Lexend', sans-serif;
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 150%; /* 27px */
+		text-align: center;
+		border: none;
+	}
+
+	&__button-business {
+		color: var(--text-color);
+		background-color: inherit;
+		border-radius: 140px;
+	}
+
+	&__button-indiv {
+		color: var(--text-color-2);
+		background: var(--background-color-2);
+		border-radius: 140px;
+	}
+
+	&__article {
+		width: 404px;
+		height: 322px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 50px;
+	}
+
+	&__article-text,
+	&__article-text-user {
+		font-family: 'Lexend', sans-serif;
+		font-size: 18px;
+		line-height: 150%; /* 27px */
+		text-align: center;
+	}
+
+	&__article-text {
+		color: var(--text-color);
+		font-weight: 400;
+	}
+
+	&__article-text-user {
+		color: var(--background-color-2);
+		font-weight: 500;
+	}
+
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 100px;
+	}
+
+	&__carousel-wrapper {
+		display: flex;
+		justify-content: space-between;
+		gap: 50px;
+	}
+
+	&__carousel {
+		display: flex;
+		gap: 80px;
+	}
+
+	&__comas-block {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 20px;
+
+		&::after,
+		&::before {
+			width: 152px;
+			height: 1px;
+			background: var(--border-color);
+			content: ''; /* Ensure the pseudo-elements are displayed */
+		}
+	}
+}
